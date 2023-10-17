@@ -24,10 +24,11 @@ alias clean="brew cleanup;brew doctor"
 alias search="brew search"
 alias showtrash="trash -l"
 alias cleantrash="trash -s"
+alias share="/usr/local/bin/share.sh"
 
 # Environment Variables
 export EDITOR="nvim"
-export SUDO_EDITOR="nvim"
+export VISUAL="nvim"
 
 # Tab Autocomplete
 autoload -U compinit
@@ -72,19 +73,15 @@ lfcd () {
 
 # Key Bindings
 bindkey -s "^o" "^ulfcd\n"
-bindkey -s "^f" "^ucd '$(dirname '$(fzf)')'\n"
-bindkey "^[[3~" delete-char
-bindkey "^[[1;5D" backward-word
-bindkey "^[[1;5C" forward-word
-bindkey "^a" beginning-of-line
-bindkey "^l" end-of-line
+bindkey "^[[1;3D" backward-word
+bindkey "^[[1;3C" forward-word
+bindkey "^A" beginning-of-line
+bindkey "^L" end-of-line
 
 # Edit Current Command in Text Editor (ctrl+e)
 autoload edit-command-line; zle -N edit-command-line
 bindkey "^e" edit-command-line
 bindkey -M vicmd "^e" edit-command-line
-bindkey -M visual "^[[3~" vi-delete
-bindkey -M vicmd "^[[3~" vi-delete-char
 
 # Plugins
 source /opt/homebrew/Cellar/zsh-autosuggestions/0.7.0/share/zsh-autosuggestions/zsh-autosuggestions.zsh
