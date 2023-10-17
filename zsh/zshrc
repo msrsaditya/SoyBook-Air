@@ -24,7 +24,6 @@ alias search="brew search"
 alias clean="brew cleanup;brew doctor"
 alias showtrash="trash -l"
 alias cleantrash="trash -s"
-alias jn="jupyter notebook"
 
 # Environment Variables
 export EDITOR="nvim"
