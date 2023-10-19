@@ -1,5 +1,5 @@
 # Options
-set shell sh
+set shell zsh
 set shellopts '-eu'
 set ifs "\n"
 set scrolloff 10
@@ -17,9 +17,9 @@ map r reload
 map d trash
 map c clear
 map E extract
-map <c-n> push :touch<space>
-map <c-N> push :mkdir<space>
-map <c-f> $lf -remote "send $id select \"$(fzf)\""
+map D cleantrash
+map <c-t> push :touch<space>
+map <c-n> push :mkdir<space>
 map <c-r> push :rename<space>
 map gg top
 map gh cd ~/
@@ -27,8 +27,7 @@ map gD cd ~/Documents
 map gd cd ~/Downloads
 map gp cd ~/Pictures
 map gc cd ~/.config
-map gs cd /usr/local/bin/Scripts
-map gt cd ~/.local/share/Trash/files
+map gs cd /usr/local/bin/
 
 # Opening Files
 cmd open &{{
@@ -47,10 +46,20 @@ cmd rename %[ -e $1 ] && printf "file exists" || mv $f $1
 cmd trash ${{ 
     if [[ -n "$fs" ]]; then
         for file in $fs; do
-            sudo mv "$file" ~/.Trash
+            trash -v -F "$file"
         done
     else
-        sudo mv "$f" ~/.Trash
+        trash -v -F "$f"
+    fi
+}}
+
+cmd cleantrash ${{ 
+    if [[ -n "$fs" ]]; then
+        for file in $fs; do
+            trash -s "$file"
+        done
+    else
+        trash -s "$f"
     fi
 }}
 
