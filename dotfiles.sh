@@ -7,7 +7,7 @@ cd install
 sudo chmod +x install.sh
 sudo ./install.sh
 cd
-sudo rm -rf ~/install.sh
+sudo rm -rf ~/soybook-air/install
 
 # Install Necessary Packages From Homebrew
 
@@ -17,8 +17,6 @@ brew install font-jetbrains-mono-nerd-font htop lf neofetch neovim trash zsh-aut
 brew install --cask alacritty arc rectangle
 
 # Copy config From Dotfiles
-
-git clone https://github.com/msrsaditya/soybook-air
 
 mkdir -p ~/.config/alacritty
 cp ~/soybook-air/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
@@ -35,8 +33,6 @@ mkdir -p /usr/local/bin
 sudo cp ~/soybook-air/scripts/share.sh /usr/local/bin/share.sh
 
 cp ~/soybook-air/zsh/zshrc ~/.zshrc
-
-sudo rm -rf ~/soybook-air
 
 ## Configure Settings
 
