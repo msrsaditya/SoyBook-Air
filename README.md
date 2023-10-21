@@ -21,7 +21,7 @@
  5. UNIX Like/BSD based, so most Linux commands, scripts and setups can be easily ported and used.
  6. You can flex around normies that you have money and you're a dEvElOpEr.
 
- 7. # Installation/Setup
+# Installation/Setup
 This setup is tailormade for my use. If you want to automatically install everything here without going through the hassle of installing every dependency by hand. <br><br>
 Clone this repo (Assuming you already have Git installed in your computer)
 ```bash
