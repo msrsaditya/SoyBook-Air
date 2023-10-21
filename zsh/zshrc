@@ -16,11 +16,14 @@ HISTFILE=~/.histfile
 alias ls="ls --color=auto"
 alias delete="trash -v -F"
 alias copy="pbcopy <"
+alias cp="sudo cp -iv"
+alias mv="sudo mv -iv"
+alias mkdir="mkdir -pv"
 alias diff="diff --color=auto"
 alias install="brew install"
 alias remove="brew uninstall"
 alias update="brew update;brew upgrade"
-alias clean="brew cleanup;brew doctor"
+alias clean="brew autoremove;brew cleanup;brew doctor"
 alias search="brew search"
 alias showtrash="trash -l"
 alias cleantrash="trash -s"
@@ -73,6 +76,7 @@ lfcd () {
 
 # Key Bindings
 bindkey -s "^o" "^ulfcd\n"
+bindkey "^[[3~" delete-char
 bindkey "^[[1;3D" backward-word
 bindkey "^[[1;3C" forward-word
 bindkey "^A" beginning-of-line
@@ -82,6 +86,8 @@ bindkey "^L" end-of-line
 autoload edit-command-line; zle -N edit-command-line
 bindkey "^e" edit-command-line
 bindkey -M vicmd "^e" edit-command-line
+bindkey -M visual "^[[3~" vi-delete
+bindkey -M vicmd "^[[3~" vi-delete-char
 
 # Plugins
 source /opt/homebrew/Cellar/zsh-autosuggestions/0.7.0/share/zsh-autosuggestions/zsh-autosuggestions.zsh
