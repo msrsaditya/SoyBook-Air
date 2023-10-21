@@ -5,5 +5,5 @@ font:
 
 colors:
   primary:
-    background: '0x000000'
+    background: '0x0c0f12'
     foreground: '0xffffff'
