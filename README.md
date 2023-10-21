@@ -1,7 +1,7 @@
 # My M2 Macbook Air Setup
 
 ![My Wallpaper]
-(https://github.com/msrsaditya/dotfiles/blob/main/screenshot.png)
+(https://github.com/msrsaditya/soybook-air/blob/main/wallpaper.png)
 
 # Philosophy
 
