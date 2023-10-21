@@ -4,12 +4,12 @@
 
 # Philosophy
 
-1. Don't sign up for apple id and don't use apple products (don't even touch them)
-2. Use terminal for everything (replace the default terminal ofc)
-3. No wallpaper, no transparency, No gimmicky additions
-4. Bind keyboard shortcuts (Vim like) for everything just like in a tiling window manager
-5. No crazy configs, just minimal vanilla and upstream
-6. Don't fall for the matrix, neo (Apple ecosystem)
+1. Don't sign up for Apple ID and don't use Apple products (don't even touch them).
+2. Use Terminal for everything (replace the default terminal ofc).
+3. No wallpaper, no transparency, No gimmicky additions.
+4. Bind keyboard shortcuts (Vim like) for everything just like in a tiling window manager.
+5. No crazy configs, just minimal vanilla and upstream.
+6. Don't fall for the matrix, neo (Apple ecosystem).
 
  # Okay, Why Mac?
 
