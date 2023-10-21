@@ -4,5 +4,5 @@ font:
   size: 20.0
 colors:
   primary:
-    background: '0x0c0f12'
+    background: '0x000000'
     foreground: '0xffffff'
