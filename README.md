@@ -8,7 +8,7 @@
 2. Use Terminal for everything (replace the default terminal ofc).
 3. No wallpaper, no transparency, No gimmicky additions.
 4. Bind keyboard shortcuts (Vim like) for everything just like in a tiling window manager.
-5. No crazy configs, just minimal vanilla and upstream.
+5. No crazy configs, just minimal, vanilla and upstream config as much as possible.
 6. Don't fall for the matrix, neo (Apple ecosystem).
 
  # Okay, Why Mac?
