@@ -41,10 +41,10 @@ killall Dock
 # Change Hostname to Macbook
 sudo scutil --set HostName Macbook
 
-# Remove Last Login Line on Top of Terminal
+# Remove Last Login Line on First Line of Terminal
 touch ~/.hushlogin
 
-# Use TouchID for Sudo Commands
+# Use TouchID for SUDO Commands
 sudo sed -i '' '2i\
 auth sufficient pam_tid.so
 ' /etc/pam.d/sudo
