@@ -1,6 +1,9 @@
 # My M2 Macbook Air Setup
 
 ![My Wallpaper](https://github.com/msrsaditya/soybook-air/blob/main/wallpaper.png)
+# Note
+
+This repo is mostly ported from my ![Archlinux Setup](https://github.com/msrsaditya/soybook-air) with some tweaks.
 
 # Philosophy
 
