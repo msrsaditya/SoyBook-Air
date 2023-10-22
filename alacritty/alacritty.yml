@@ -2,7 +2,3 @@ font:
   normal:
     family: JetBrainsMono Nerd Font
   size: 20.0
-colors:
-  primary:
-    background: '0x000000'
-    foreground: '0xffffff'
