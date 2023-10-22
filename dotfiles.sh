@@ -1,7 +1,6 @@
 #!/bin/zsh
 
 # Install Homebrew
-
 git clone https://github.com/Homebrew/install
 cd install
 sudo chmod +x install.sh
@@ -10,14 +9,12 @@ cd
 sudo rm -rf ~/soybook-air/install
 
 # Install Necessary Packages From Homebrew
-
 brew analytics off
 brew tap homebrew/cask-fonts
 brew install font-jetbrains-mono-nerd-font htop lf neofetch neovim trash zsh-autosuggestions zsh-syntax-highlighting
-brew install --cask alacritty arc rectangle
+brew install --cask alacritty brave-browser rectangle
 
 # Copy config From Dotfiles
-
 mkdir -p ~/.config/alacritty
 cp ~/soybook-air/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
 
@@ -37,7 +34,6 @@ cp ~/soybook-air/zsh/zshrc ~/.zshrc
 ## Configure Settings
 
 # Reduce Dock Response Time
-
 defaults write com.apple.dock autohide-delay -float 0
 defaults write com.apple.dock autohide-time-modifier -int 0
 killall Dock
