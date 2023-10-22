@@ -1,6 +1,6 @@
 # My M2 Macbook Air Setup
 
-![My Wallpaper](https://github.com/msrsaditya/soybook-air/blob/main/wallpaper.png)
+![My Wallpaper](https://github.com/msrsaditya/soybook-air/blob/main/screenshot.png)
 # Note
 
 This repo is mostly ported from my Archlinux Setup (https://github.com/msrsaditya/soybook-air) with some tweaks. If Asahi Linux (https://asahilinux.org) becomes stable enough with everything working perfectly, this project will be archived.<br><br>That day when it does, I can flex both around normies and neckbeards at the same time
