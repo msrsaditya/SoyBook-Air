@@ -35,6 +35,7 @@ cp ~/soybook-air/nvim/init.lua ~/.config/nvim/init.lua
 
 mkdir -p /usr/local/bin
 sudo cp ~/soybook-air/scripts/share.sh /usr/local/bin/share.sh
+sudo chmod +x /usr/local/bin/share.sh
 
 cp ~/soybook-air/zsh/zshrc ~/.zshrc
 
