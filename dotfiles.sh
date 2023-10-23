@@ -1,15 +1,22 @@
 #!/bin/zsh
 
+# Install Xcode Command Line Tools
+xcode-select --install
+
 # Install Homebrew
 git clone https://github.com/Homebrew/install
 cd install
 sudo chmod +x install.sh
-sudo ./install.sh
+./install.sh
 cd
 sudo rm -rf ~/soybook-air/install
 
-# Install Necessary Packages From Homebrew
+# Setup Homebrew 
+(echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/shashank/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
 brew analytics off
+
+# Install Necessary Packages From Homebrew
 brew tap homebrew/cask-fonts
 brew install font-jetbrains-mono-nerd-font htop lf neofetch neovim trash zsh-autosuggestions zsh-syntax-highlighting
 brew install --cask alacritty brave-browser rectangle
