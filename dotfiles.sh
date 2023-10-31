@@ -2,6 +2,7 @@
 
 # Install Xcode Command Line Tools Before Hand
 # xcode-select --install
+# Also clone this repo, git clone https://github.com/msrsaditya/soybook-air
 
 # Install Homebrew
 git clone https://github.com/Homebrew/install
