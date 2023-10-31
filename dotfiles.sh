@@ -1,7 +1,7 @@
 #!/bin/zsh
 
-# Install Xcode Command Line Tools
-xcode-select --install
+# Install Xcode Command Line Tools Before Hand
+# xcode-select --install
 
 # Install Homebrew
 git clone https://github.com/Homebrew/install
@@ -10,16 +10,21 @@ sudo chmod +x install.sh
 ./install.sh
 cd
 sudo rm -rf ~/soybook-air/install
+cd
 
 # Setup Homebrew 
 (echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/shashank/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 brew analytics off
+brew update;brew clean;brew doctor
 
 # Install Necessary Packages From Homebrew
 brew tap homebrew/cask-fonts
-brew install font-jetbrains-mono-nerd-font htop lf neofetch neovim trash zsh-autosuggestions zsh-syntax-highlighting
-brew install --cask alacritty brave-browser rectangle
+brew update;brew clean;brew doctor
+brew install font-jetbrains-mono-nerd-font htop lf neofetch neovim openjdk trash zsh-autosuggestions zsh-syntax-highlighting
+brew update;brew clean;brew doctor
+brew install --cask alacritty brave-browser rectangle visual-studio-code
+cd
 
 # Copy config From Dotfiles
 mkdir -p ~/.config/alacritty
@@ -56,3 +61,6 @@ touch ~/.hushlogin
 sudo sed -i '' '2i\
 auth sufficient pam_tid.so
 ' /etc/pam.d/sudo
+
+# Get Access to ~/.local Directory for Applications like Neovim, lf etc.
+sudo chown -R shashank:shashank ~/.local
