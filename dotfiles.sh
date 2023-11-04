@@ -1,9 +1,8 @@
 #!/bin/zsh
 
-# Install Xcode Command Line Tools Before Hand
-# xcode-select --install
-# Also clone this repo with "git clone https://github.com/msrsaditya/soybook-air" and give permissions to the script
-# "cd soybook-air;sudo chmod +x dotfiles.sh;./dotfiles.sh;cd"
+# These are Instructions on What To Do -- Don't Run it as a Script!
+# Install Xcode Command Line Tools
+xcode-select --install
 
 # Install Homebrew
 git clone https://github.com/Homebrew/install
@@ -12,23 +11,28 @@ sudo chmod +x install.sh
 ./install.sh
 cd
 sudo rm -rf install
-cd
 
 # Setup Homebrew 
 (echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/shashank/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 brew analytics off
-brew update;brew clean;brew doctor
+brew update;brew upgrade;brew autoremove;brew cleanup;brew doctor
 
 # Install Necessary Packages From Homebrew
 brew tap homebrew/cask-fonts
-brew update;brew clean;brew doctor
-brew install font-jetbrains-mono-nerd-font htop lf neofetch neovim openjdk trash zsh-autosuggestions zsh-syntax-highlighting
-brew update;brew clean;brew doctor
-brew install --cask alacritty brave-browser rectangle visual-studio-code
+brew update;brew upgrade;brew autoremove;brew cleanup;brew doctor
+brew install font-jetbrains-mono-nerd-font htop jupyter lf neofetch neovim openjdk trash zsh-autosuggestions zsh-syntax-highlighting
+brew update;brew upgrade;brew autoremove;brew cleanup;brew doctor
+brew install --cask alacritty 
+brew install --cask brave-browser 
+brew install --cask rectangle 
+brew install --cask visual-studio-code
 cd
+brew update;brew upgrade;brew autoremove;brew cleanup;brew doctor
 
 # Copy config From Dotfiles
+git clone https://github.com/msrsaditya/soybook-air
+
 mkdir -p ~/.config/alacritty
 cp ~/soybook-air/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
 
