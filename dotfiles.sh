@@ -4,7 +4,7 @@
 # Install Xcode Command Line Tools
 xcode-select --install
 
-# Install Homebrew
+# Install Homebrew Package Manager 
 git clone https://github.com/Homebrew/install
 cd install
 sudo chmod +x install.sh
