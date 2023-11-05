@@ -30,6 +30,11 @@ brew install --cask visual-studio-code
 cd
 brew update;brew upgrade;brew autoremove;brew cleanup;brew doctor
 
+# openjdk setup
+sudo ln -sfn /opt/homebrew/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
+echo 'export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"' >> ~/.zshrc
+export CPPFLAGS="-I/opt/homebrew/opt/openjdk/include"
+
 # Copy config From Dotfiles
 git clone https://github.com/msrsaditya/soybook-air
 
@@ -44,7 +49,7 @@ cp ~/soybook-air/lf/lfrc ~/.config/lf/lfrc
 mkdir -p ~/.config/nvim
 cp ~/soybook-air/nvim/init.lua ~/.config/nvim/init.lua
 
-mkdir -p /usr/local/bin
+sudo mkdir -p /usr/local/bin
 sudo cp ~/soybook-air/scripts/share.sh /usr/local/bin/share.sh
 sudo chmod +x /usr/local/bin/share.sh
 
@@ -69,4 +74,4 @@ auth sufficient pam_tid.so
 ' /etc/pam.d/sudo
 
 # Get Access to ~/.local Directory for Applications like Neovim, lf etc.
-sudo chown -R shashank:shashank ~/.local
+sudo chown -R shashank:staff ~/.local
