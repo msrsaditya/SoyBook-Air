@@ -1,0 +1,16 @@
+[user]
+	name = msrsaditya
+	email = msrsaditya@gmail.com
+[init]
+	defaultBranch = main
+[color]
+	ui = auto
+[pull]
+    rebase = false
+[alias]
+    st = status
+    a = add
+    cm = commit -m
+    pom = push origin main
+[core]
+	excludesfile = /Users/shashank/.gitignore_global
