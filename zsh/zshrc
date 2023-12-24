@@ -14,6 +14,7 @@ HISTFILE=~/.histfile
 
 # Aliases
 alias ls="ls --color=auto"
+alias clear="printf '\33c\e[3J'"
 alias delete="trash -v -F"
 alias copy="pbcopy <"
 alias cp="sudo cp -iv"
