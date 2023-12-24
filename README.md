@@ -7,6 +7,16 @@ This repo is mostly ported from my Archlinux Setup (https://github.com/msrsadity
 ```archlinux
 I use Arch on my M2 Macbook BTW!
 ```
+# Apps I Use/Recommend
+
+Browser -- Brave Browser
+Code Editor -- VS Code & Neovim
+File Manager -- lf
+Terminal -- Alacritty
+Video Player -- IINA
+Window Manager -- Rectangle
+
+Along with default stuff like ZSH Shell, Finder, Whatsapp, Apple Mail client etc.
 
 # Philosophy
 
