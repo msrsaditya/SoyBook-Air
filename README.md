@@ -9,13 +9,13 @@ I use Arch on my M2 Macbook BTW!
 ```
 # Apps I Use/Recommend
 
-Browser -- Brave Browser
-Code Editor -- VS Code & Neovim
-File Manager -- lf
-Terminal -- Alacritty
-Video Player -- IINA
-Window Manager -- Rectangle
-
+1. Browser -- Brave Browser
+2. Code Editor -- VS Code & Neovim
+3. File Manager -- lf
+4. Terminal -- Alacritty
+5. Video Player -- IINA
+6. Window Manager -- Rectangle
+<br>
 Along with default stuff like ZSH Shell, Finder, Whatsapp, Apple Mail client etc.
 
 # Philosophy
