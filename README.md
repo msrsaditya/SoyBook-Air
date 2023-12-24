@@ -15,7 +15,6 @@ I use Arch on my M2 Macbook BTW!
 4. Terminal -- Alacritty
 5. Video Player -- IINA
 6. Window Manager -- Rectangle
-<br>
 Along with default stuff like ZSH Shell, Finder, Whatsapp, Apple Mail client etc.
 
 # Philosophy
