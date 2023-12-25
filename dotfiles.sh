@@ -21,7 +21,7 @@ brew update;brew upgrade;brew autoremove;brew cleanup;brew doctor
 # Install Necessary Packages From Homebrew
 brew tap homebrew/cask-fonts
 brew update;brew upgrade;brew autoremove;brew cleanup;brew doctor
-brew install font-jetbrains-mono-nerd-font htop jupyter lf neofetch neovim openjdk trash zsh-autosuggestions zsh-syntax-highlighting
+brew install font-jetbrains-mono-nerd-font htop jupyter lf neofetch neovim node openjdk python3 trash zsh-autosuggestions zsh-syntax-highlighting
 brew update;brew upgrade;brew autoremove;brew cleanup;brew doctor
 brew install --cask alacritty
 brew install --cask brave-browser
