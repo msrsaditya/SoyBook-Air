@@ -1,6 +1,5 @@
-#!/bin/zsh
+#!/bin/sh
 
-# These are Instructions on What To Do -- Don't Run it as a Script!
 # Install Xcode Command Line Tools
 xcode-select --install
 
@@ -20,19 +19,11 @@ brew update;brew upgrade;brew autoremove;brew cleanup;brew doctor
 
 # Install Necessary Packages From Homebrew
 brew tap homebrew/cask-fonts
-brew update;brew upgrade;brew autoremove;brew cleanup;brew doctor
 brew install font-jetbrains-mono-nerd-font htop jupyter lf neofetch neovim node openjdk python3 trash zsh-autosuggestions zsh-syntax-highlighting
-brew update;brew upgrade;brew autoremove;brew cleanup;brew doctor
-brew install --cask alacritty
-brew install --cask brave-browser
-brew install --cask iina
-brew install --cask rectangle
-brew install --cask visual-studio-code
-brew install --cask whatsapp
-cd
+brew install --cask alacritty brave-browser iina rectangle visual-studio-code whatsapp
 brew update;brew upgrade;brew autoremove;brew cleanup;brew doctor
 
-# openjdk setup
+# Setup OpenJDK
 sudo ln -sfn /opt/homebrew/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
 echo 'export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"' >> ~/.zshrc
 export CPPFLAGS="-I/opt/homebrew/opt/openjdk/include"
@@ -41,7 +32,7 @@ export CPPFLAGS="-I/opt/homebrew/opt/openjdk/include"
 git clone https://github.com/msrsaditya/soybook-air
 
 mkdir -p ~/.config/alacritty
-cp ~/soybook-air/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
+cp ~/soybook-air/alacritty/alacritty.toml ~/.config/alacritty/alacritty.toml
 
 mkdir -p ~/.config/lf
 cp ~/soybook-air/lf/colors ~/.config/lf/colors
@@ -57,6 +48,8 @@ sudo chmod +x /usr/local/bin/share.sh
 
 cp ~/soybook-air/zsh/zshrc ~/.zshrc
 
+sudo rm -rf soybook-air
+
 ## Configure Settings
 
 # Reduce Dock Response Time
@@ -65,15 +58,19 @@ defaults write com.apple.dock autohide-time-modifier -int 0
 killall Dock
 
 # Change Hostname to Macbook
-sudo scutil --set HostName Macbook
+sudo scutil --set HostName MacBook
 
 # Remove Last Login Line on First Line of Terminal
 touch ~/.hushlogin
 
 # Use TouchID for SUDO Commands
-sudo sed -i '' '2i\
-auth sufficient pam_tid.so
-' /etc/pam.d/sudo
+sudo nvim /etc/pam.d/sudo
+auth sufficient pam_tid.so # Add this to First Line
 
 # Get Access to ~/.local Directory for Applications like Neovim, lf etc.
 sudo chown -R shashank:staff ~/.local
+
+# Setup Git SSH
+ssh-keygen -t ed25519 -C "msrsaditya@gmail.com"
+cat ~/.ssh/id_ed25519.pub # Copy Paste this Key in GitHub
+ssh -T git@github.com # Test
