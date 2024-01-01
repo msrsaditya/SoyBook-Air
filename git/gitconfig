@@ -6,11 +6,11 @@
 [color]
 	ui = auto
 [pull]
-    rebase = false
+	rebase = false
 [alias]
-    st = status
-    a = add
-    cm = commit -m
-    pom = push origin main
+	st = status
+	a = add
+	cm = commit -m
+	pom = push origin main
 [core]
 	excludesfile = /Users/shashank/.gitignore_global
