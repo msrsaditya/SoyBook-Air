@@ -47,6 +47,9 @@ sudo chmod +x /usr/local/bin/share.sh
 
 cp ~/soybook-air/zsh/zshrc ~/.zshrc
 
+cp ~/soybook-air/git/gitconfig ~/.gitconfig
+cp ~/soybook-air/git/gitignore_global ~/.gitignore_global
+
 sudo rm -rf soybook-air
 
 ## Configure Settings
@@ -69,7 +72,7 @@ auth sufficient pam_tid.so # Add this to First Line
 # Get Access to ~/.local Directory for Applications like Neovim, lf etc.
 sudo chown -R shashank:staff ~/.local
 
-# Setup Git SSH
+# Setup Git SSH (After Setting Up Everything)
 ssh-keygen -t ed25519 -C "msrsaditya@gmail.com"
-cat ~/.ssh/id_ed25519.pub # Copy Paste this Key in GitHub
+copy ~/.ssh/id_ed25519.pub # Copy Paste this Key in GitHub
 ssh -T git@github.com # Test
