@@ -29,6 +29,7 @@ alias search="brew search"
 alias showtrash="trash -l"
 alias cleantrash="trash -s"
 alias share="/usr/local/bin/share.sh"
+alias journal="/usr/local/bin/journal.sh"
 alias gitall="git add . && git commit -m 'Changes made' && git push origin main"
 
 # Environment Variables
