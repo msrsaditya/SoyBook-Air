@@ -32,6 +32,7 @@ alias share="/usr/local/bin/share.sh"
 alias journal="/usr/local/bin/journal.sh"
 alias gitall="git add . && git commit -m 'Changes made' && git push origin main"
 alias jn="jupyter notebook"
+alias whois='whois_func() { truecallerjs -s "+91$1" | grep -w "name" | awk -F ": " "{print \$2}"; }; whois_func'
 
 # Environment Variables
 export EDITOR="nvim"
