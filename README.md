@@ -9,12 +9,12 @@ I use Arch on my M2 Macbook BTW!
 ```
 # Apps I Use/Recommend
 
-1. Browser -- Brave Browser
-2. Code Editor -- VS Code & Neovim
-3. File Manager -- lf
-4. Terminal -- Alacritty
-5. Video Player -- IINA
-6. Window Manager -- Rectangle
+1. Browser -- Ungoogled Chromium (The only un-bloated de-googled safe and private browser there is. Some tweaks must be done to make it perfect)
+2. Code Editor -- VS Code (most popular) & Neovim (most efficient)
+3. File Manager -- lf (works at speed of thought, also use macos finder occassionally)
+4. Terminal -- Alacritty (fastest terminal emulator. Period.)
+5. Video Player -- IINA (The best out there, man, really!)
+6. Window Manager -- Rectangle (default window controls suck)
 <br>
 &ensp; Along with default stuff like ZSH Shell, Finder, Whatsapp, Apple Mail client etc.
 
@@ -22,7 +22,7 @@ I use Arch on my M2 Macbook BTW!
 
 1. Don't sign up for Apple ID and don't use Apple products (don't even touch them).
 2. Use Terminal for everything (replace the default terminal ofc).
-3. No wallpaper, no transparency, No gimmicky additions.
+3. no transparency, no blurring, No gimmicky additions.
 4. Bind keyboard shortcuts (Vim like) for everything just like in a tiling window manager.
 5. No crazy configs, just minimal, vanilla and upstream config as much as possible.
 6. Don't fall for the matrix, neo (Apple ecosystem).
