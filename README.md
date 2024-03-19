@@ -11,7 +11,7 @@ I use Arch on my M2 Macbook BTW!
 
 1. Browser -- Ungoogled Chromium (The only un-bloated de-googled safe and private browser there is. Some tweaks must be done to make it perfect)
 2. Code Editor -- VS Code (most popular) & Neovim (most efficient)
-3. File Manager -- lf (works at speed of thought, also use macos finder occassionally)
+3. File Manager -- lf (works at speed of thought, also using macos finder occassionally)
 4. Terminal -- Alacritty (fastest terminal emulator. Period.)
 5. Video Player -- IINA (The best out there, man, really!)
 6. Window Manager -- Rectangle (default window controls suck)
