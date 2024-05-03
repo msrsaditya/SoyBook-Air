@@ -1,4 +1,4 @@
-# My M2 Macbook Air Setup
+# My 2022 M2 Macbook Air Setup
 
 ![My Wallpaper](https://github.com/msrsaditya/soybook-air/blob/main/screenshot.png)
 # Note
@@ -9,31 +9,22 @@ I use Arch on my M2 Macbook BTW!
 ```
 # Apps I Use/Recommend
 
-1. Browser -- Ungoogled Chromium (The only un-bloated de-googled safe and private browser there is. Some tweaks must be done to make it perfect)
-2. Code Editor -- VS Code (most popular) & Neovim (most efficient)
-3. File Manager -- lf (works at speed of thought, also using macos finder occassionally)
-4. Terminal -- Alacritty (fastest terminal emulator. Period.)
-5. Video Player -- IINA (The best out there, man, really!)
-6. Window Manager -- Rectangle (default window controls suck)
+1. Browser -- Brave
+2. Code Editor -- Neovim
+3. File Manager -- lf
+4. Terminal Emulator -- Alacritty
+5. Video Player -- IINA
+6. Window Manager -- Rectangle
 <br>
-&ensp; Along with default stuff like ZSH Shell, Finder, Whatsapp, Apple Mail client etc.
-
-# Philosophy
-
-1. Don't sign up for Apple ID and don't use Apple products (don't even touch them).
-2. Use Terminal for everything (replace the default terminal ofc).
-3. no transparency, no blurring, No gimmicky additions.
-4. Bind keyboard shortcuts (Vim like) for everything just like in a tiling window manager.
-5. No crazy configs, just minimal, vanilla and upstream config as much as possible.
-6. Don't fall for the matrix, neo (Apple ecosystem).
+&ensp; Some default stuff like ZSH Shell, Finder, Whatsapp, Apple Mail client etc.
 
  # Okay, Why Mac?
 
- I hate my life for using this bro, but
+ Mac is a Proprietary Fully-Closed Walled-Garden, but
  1. M1 and M2 chips are the most powerful consumer chips on the market right now with excellent power efficiency and CPU/GPU performance.
  2. The build quality is amazing on these machines -- slim design, excellent sound, display and webcam quality.
- 3. Most GUI apps are built for Windows and Mac, leaving out Linux :(
- 4. The only real OS you can use other than Windows and Linux is Mac. Windows is bloated, slow and has terrible UI/UX, Linux is missing some GUI apps and has limited hardware support (will be fixed hopefully) 
+ 3. Most Apps are built for Windows and Mac, leaving out Linux :(
+ 4. The only real OS you can use other than Windows and Linux is Mac. Windows is bloated, slow and has terrible UI/UX, With the worst developer experience, Linux is missing some apps, lack of standardisation and very niche and has limited hardware support (will be fixed hopefully) 
  5. UNIX Like/BSD based, so most Linux commands, scripts and setups can be easily ported and used.
  6. You can flex around normies that you have money and you're a dEvElOpEr.
 

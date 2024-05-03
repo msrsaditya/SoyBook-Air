@@ -13,11 +13,10 @@ map . set hidden!
 map x cut
 map y copy
 map p paste
-map r reload
-map d trash
 map c clear
-map B bulkrename
+map r reload
 map E extract
+map d trash
 map D cleantrash
 map <c-t> push :touch<space>
 map <c-n> push :mkdir<space>
@@ -42,26 +41,6 @@ cmd open &{{
 cmd touch $touch "$(echo $* | tr ' ' '\ ')"
 cmd mkdir $mkdir -p "$(echo $* | tr ' ' '\ ')"
 cmd rename %[ -e $1 ] && printf "file exists" || mv $f $1
-cmd bulkrename ${{
-    tmpfile_old="$(mktemp)"
-    tmpfile_new="$(mktemp)"
-
-    [ -n "$fs" ] && fs=$(basename -a $fs) || fs=$(ls)
-
-    echo "$fs" > "$tmpfile_old"
-    echo "$fs" > "$tmpfile_new"
-    $EDITOR "$tmpfile_new"
-
-    [ "$(wc -l < "$tmpfile_old")" -eq "$(wc -l < "$tmpfile_new")" ] || { rm -f "$tmpfile_old" "$tmpfile_new"; exit 1; }
-
-    paste "$tmpfile_old" "$tmpfile_new" | while IFS="$(printf '\t')" read -r src dst
-    do
-        [ "$src" = "$dst" ] || [ -e "$dst" ] || mv -- "$src" "$dst"
-    done
-
-    rm -f "$tmpfile_old" "$tmpfile_new"
-    lf -remote "send $id unselect"
-}}
 
 # Trashing Files
 cmd trash ${{ 
