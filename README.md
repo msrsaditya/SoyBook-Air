@@ -11,12 +11,12 @@ I use Arch on my M2 Macbook BTW!
 
 1. Browser -- Brave
 2. Code Editor -- Neovim
-3. File Manager -- lf
+3. File Manager -- LF 
 4. Terminal Emulator -- Alacritty
 5. Video Player -- IINA
 6. Window Manager -- Rectangle
 <br>
-&ensp; Some default stuff like ZSH Shell, Finder, Whatsapp, Apple Mail client etc.
+&ensp; Along With Some default stuff like ZSH Shell, Finder, Whatsapp, Apple Mail client etc.
 
  # Okay, Why Mac?
 

@@ -1,7 +1,9 @@
 #!/bin/sh
 
-# Install this Script as a Prerequisite
+# Install and run this Script as a Prerequisite
 # wget "https://raw.githubusercontent.com/msrsaditya/SoyBook-Air/main/dotfiles.sh"
+# sudo chmod +x dotfiles.sh
+# sudo sh dotfiles.sh
 
 # Install Xcode Command Line Tools
 xcode-select --install
