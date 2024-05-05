@@ -5,6 +5,7 @@ PS1="%B%{$fg[white]%}[%{$fg[white]%}%n%{$fg[white]%}@%{$fg[white]%}%M %{$fg[cyan
 # Options
 setopt share_history
 setopt append_history
+setopt autocd
 
 # History
 HISTSIZE=1000000
