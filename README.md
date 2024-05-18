@@ -10,7 +10,6 @@
 - **Terminal Emulator:** Alacritty
 - **Video Player:** IINA
 - **Window Manager:** Rectangle
-<br>
 &ensp; Along With Some Default Programs Like ZSH Shell, Finder, Whatsapp, Apple Mail etc.
 
 # Why Mac?
@@ -20,8 +19,7 @@
 - Easy Portability and Sleek Design
 - Good Developer Experience
 - Good UI/UX
-<br>
-&ensp; Although you can get some of these things in Linux also, Linux desktop is kind of abandoned. There's no official Whatsapp, Spotify, Amazon Prime and "Insert any Normie App" clients. Linux also doesn't support professional tools like Adobe Photoshop (the alternatives are ok at best). The market share is single-digit percentage and everything is fragmented creating a paradox of choice for a new user. Windows is riddled with ads, telemetry, AI and planned obsolescence. MacOS is a good balance between the two, although it is very expensive and creates a walled garden with limited customisations, not to mention everything non-free (no-libre). Picking an OS is like picking your poison, I picked MacOS.
+&ensp; Although you can get some of these things in Linux also, Linux desktop is kind of abandoned. There's no official Whatsapp, Spotify, Amazon Prime and "Insert any Normie App" clients. Linux also doesn't support professional tools like Adobe Photoshop (the alternatives are ok at best). The market share is single-digit percentage and everything is fragmented creating a paradox of choice for a new user. Windows is riddled with ads, telemetry, AI and planned obsolescence. MacOS is a good balance between the two, although it is very expensive and creates a walled garden with limited customisations, not to mention everything is non-free (non-libre). Picking an OS is like picking your poison, I picked MacOS.
 
 # Installation/Setup
 Run the Dotfiles Shell Script
