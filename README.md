@@ -23,7 +23,7 @@ Along With Some Default Programs Like ZSH Shell, Finder, Whatsapp, Apple Mail et
 
 Although you can get some of these things in Linux as well, Linux desktop is kind of abandoned. There's no official Whatsapp, Spotify, Amazon Prime, or "Insert any Normie App" client. Linux also doesn't support professional tools like Adobe Photoshop (the alternatives are okay at best). The market share is a single-digit percentage, and everything is fragmented, creating a paradox of choice for a new user. Windows is riddled with ads, telemetry, AI, and planned obsolescence. MacOS is a good balance between the two, although it is very expensive and creates a walled garden with limited customizations, not to mention everything is non-free (non-libre).
 
-Picking an OS is like picking your poison; I picked MacOS 🙃.
+Picking an OS is like picking your poison; I picked MacOS 🙃
 
 # Installation/Setup
 Run the Dotfiles Shell Script
