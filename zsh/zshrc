@@ -14,21 +14,21 @@ HISTFILE=~/.histfile
 
 # Aliases
 alias ls="ls --color=auto"
+alias clear="printf '\33c\e[3J'"
 alias cp="sudo cp -iv"
 alias mv="sudo mv -iv"
-alias copy="pbcopy <"
 alias mkdir="mkdir -pv"
-alias diff="diff --color=auto"
+alias copy="pbcopy <"
+alias diff="vimdiff"
 alias delete="trash -v -F"
 alias showtrash="trash -l"
 alias cleantrash="trash -s"
-alias clear="printf '\33c\e[3J'"
 alias install="brew install"
 alias remove="brew uninstall"
-alias update="brew update; brew upgrade; brew install --cask $(brew list --cask | tr '\n' ' '); sudo softwareupdate -i -a"
-alias clean="brew autoremove; brew cleanup; brew doctor"
+alias update="brew update;brew upgrade;brew install --cask $(brew list --cask | tr '\n' ' ');sudo softwareupdate -i -a"
+alias clean="brew autoremove;brew cleanup;brew doctor"
 alias search="brew search"
-alias list="brew leaves; brew list --cask"
+alias list="brew leaves;brew list --cask"
 alias gitall="git pull && git add . && git commit -m 'Changes made' && git push origin main"
 
 # Environment Variables
@@ -41,6 +41,10 @@ zstyle ":completion:*" menu select
 zmodload zsh/complist
 compinit
 _comp_options+=(globdots)
+
+# Vim Bindings
+bindkey -v
+export KEYTIMEOUT=1
 
 # Cursor Shape for Different Vim Modes 
 function zle-keymap-select () {
@@ -84,6 +88,8 @@ bindkey "^L" end-of-line
 autoload edit-command-line; zle -N edit-command-line
 bindkey "^e" edit-command-line
 bindkey -M vicmd "^e" edit-command-line
+bindkey -M visual "^[[3~" vi-delete
+bindkey -M vicmd "^[[3~" vi-delete-char
 
 # Plugins
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh

@@ -1,7 +1,8 @@
 #!/bin/sh
 
-# Install and run this Script as a Prerequisite
-# wget "https://raw.githubusercontent.com/msrsaditya/SoyBook-Air/main/dotfiles.sh"
+## Download and Run this Script as a Prerequisite
+
+# curl -O "https://raw.githubusercontent.com/msrsaditya/SoyBook-Air/main/dotfiles.sh"
 # sudo chmod +x dotfiles.sh
 # sudo sh dotfiles.sh
 
@@ -37,10 +38,14 @@ mkdir -p ~/.config/nvim
 cp ~/soybook-air/nvim/init.lua ~/.config/nvim/init.lua
 
 sudo mkdir -p /usr/local/bin
+sudo cp ~/soybook-air/scripts/download.sh /usr/local/bin/download.sh
+sudo cp ~/soybook-air/scripts/movie.sh /usr/local/bin/movie.sh
 sudo cp ~/soybook-air/scripts/share.sh /usr/local/bin/share.sh
-sudo cp ~/soybook-air/scripts/journal.sh /usr/local/bin/journal.sh
+sudo cp ~/soybook-air/scripts/whois.sh /usr/local/bin/whois.sh
+sudo chmod +x /usr/local/bin/download.sh
+sudo chmod +x /usr/local/bin/movie.sh
 sudo chmod +x /usr/local/bin/share.sh
-sudo chmod +x /usr/local/bin/journal.sh
+sudo chmod +x /usr/local/bin/whois.sh
 
 cp ~/soybook-air/zsh/zshrc ~/.zshrc
 
@@ -48,6 +53,9 @@ cp ~/soybook-air/git/gitconfig ~/.gitconfig
 cp ~/soybook-air/git/gitignore_global ~/.gitignore_global
 
 sudo rm -rf soybook-air
+
+# Get Browser Bookmarks File
+curl -O "https://raw.githubusercontent.com/msrsaditya/Collections/main/Bookmarks.html"
 
 ## Configure Settings
 
@@ -68,7 +76,9 @@ sudo sed -i '' '3s/^/auth       sufficient     pam_tid.so\n/' /etc/pam.d/sudo
 # Get Access to ~/.local Directory for Applications like Neovim, lf etc.
 sudo chown -R shashank:staff ~/.local
 
-# Setup Git SSH (After Setting Up Everything)
+# Setup Git SSH
 ssh-keygen -t ed25519 -C "msrsaditya@gmail.com"
 copy ~/.ssh/id_ed25519.pub # Copy Paste this Key in GitHub SSH/GPG Keys Section
-ssh -T git@github.com # Test
+
+## Test
+# ssh -T git@github.com

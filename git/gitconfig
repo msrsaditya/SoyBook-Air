@@ -1,11 +1,11 @@
 [user]
-	name = msrsaditya
-	email = msrsaditya@gmail.com
+    name = msrsaditya
+    email = msrsaditya@gmail.com
 [init]
-	defaultBranch = main
+    defaultBranch = main
 [color]
-	ui = auto
+    ui = auto
 [pull]
-	rebase = false
+    rebase = false
 [core]
-	excludesfile = /Users/shashank/.gitignore_global
+    excludesfile = /Users/shashank/.gitignore_global
