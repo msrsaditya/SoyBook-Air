@@ -4,12 +4,12 @@
 
 # Apps I Use/Recommend
 
-1. Browser -- Brave
-2. Code Editor -- Neovim
-3. File Manager -- LF 
-4. Terminal Emulator -- Alacritty
-5. Video Player -- IINA
-6. Window Manager -- Rectangle
+- **Browser:** Brave Browser
+- **Code Editor:** Neovim
+- **File Manager:** LF
+- **Terminal Emulator:** Alacritty
+- **Video Player:** IINA
+- **Window Manager:** Rectangle
 <br>
 &ensp; Along With Some default programs like ZSH Shell, Finder, Whatsapp, Apple Mail etc.
 
