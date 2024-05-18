@@ -1,6 +1,6 @@
 # 2022 M2 Macbook Air Setup
 
-![My Wallpaper](https://github.com/msrsaditya/soybook-air/blob/main/screenshot.png)
+![Wallpaper](https://github.com/msrsaditya/soybook-air/blob/main/screenshot.png)
 
 # Apps I Use/Recommend
 
@@ -11,7 +11,7 @@
 - **Video Player:** IINA
 - **Window Manager:** Rectangle
 <br>
-&ensp; Along With Some default programs like ZSH Shell, Finder, Whatsapp, Apple Mail etc.
+&ensp; Along With Some Default Programs Like ZSH Shell, Finder, Whatsapp, Apple Mail etc.
 
 # Installation/Setup
 Run the Dotfiles Shell Script
