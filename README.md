@@ -14,19 +14,16 @@
 &ensp; Along With Some default programs like ZSH Shell, Finder, Whatsapp, Apple Mail etc.
 
 # Installation/Setup
-Clone this repo (Assuming you already have Git installed in your computer)
+Run the Dotfiles Shell Script
 ```bash
-git clone https://github.com/msrsaditya/soybook-air
+curl -O "https://raw.githubusercontent.com/msrsaditya/SoyBook-Air/main/dotfiles.sh"
 ```
 Then give executable permissions to dotfiles.sh script
 ```bash
-sudo chmod +x ~/path/to/soybook-air/dotfiles.sh
+sudo chmod +x ~/path/to/dotfiles.sh
 ```
 Finally run the script
 ```bash
-./dotfiles.sh
+sudo sh dotfiles.sh
 ```
-It will automatically install all dependencies, copies all config files, Fixes many mac default settings and so on.
-
-# License
-This is Licensed Under GPL3. You're free to use this as you see fit.
+The script will automatically install all dependencies, copies all config files, Fixes many mac default settings and so on...
