@@ -2,7 +2,7 @@
 
 ![Wallpaper](https://github.com/msrsaditya/soybook-air/blob/main/screenshot.png)
 
-# Apps I Use/Recommend
+# Programs I Use/Recommend
 
 - **Browser:** Brave Browser
 - **Code Editor:** Neovim
