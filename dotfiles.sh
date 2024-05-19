@@ -4,10 +4,9 @@
 # xcode-select --install
 
 ## Download and Run this Script
-
 # curl -O "https://raw.githubusercontent.com/msrsaditya/SoyBook-Air/main/dotfiles.sh"
 # sudo chmod +x dotfiles.sh
-# sudo sh dotfiles.sh
+# sh dotfiles.sh
 
 # Install Homebrew Package Manager 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -83,3 +82,4 @@ copy ~/.ssh/id_ed25519.pub # Copy Paste this Key in GitHub SSH/GPG Keys Section
 ## Test
 # ssh -T git@github.com
 # Add Pass Key to GitHub for Auto Login
+# Remove dotfiles.sh after usage
