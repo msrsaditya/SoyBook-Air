@@ -26,6 +26,10 @@ Although you can get some of these things in Linux as well, Linux desktop is kin
 Picking an OS is like picking your poison; I picked MacOS 🙃
 
 # Installation/Setup
+Make sure to have xcode tools installed
+```bash
+xcode-select --install
+```
 Run the Dotfiles Shell Script
 ```bash
 curl -O "https://raw.githubusercontent.com/msrsaditya/SoyBook-Air/main/dotfiles.sh"
