@@ -1,6 +1,6 @@
 # 2022 M2 Macbook Air Setup
 
-![Wallpaper](https://github.com/msrsaditya/soybook-air/blob/main/Screenshot.png)
+![Wallpaper](https://github.com/msrsaditya/SoyBook-Air/blob/main/Screenshot.png)
 
 # Programs I Use and Recommend
 
