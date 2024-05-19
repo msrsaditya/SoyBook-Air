@@ -18,7 +18,6 @@ brew analytics off
 brew update;brew upgrade;brew autoremove;brew cleanup;brew doctor
 
 # Install Necessary Packages From Homebrew
-brew tap homebrew/cask
 brew install alacritty brave-browser fastfetch font-jetbrains-mono-nerd-font htop iina lf neovim python3 rectangle trash whatsapp zsh-autosuggestions zsh-syntax-highlighting
 brew update;brew upgrade;brew autoremove;brew cleanup;brew doctor
 
