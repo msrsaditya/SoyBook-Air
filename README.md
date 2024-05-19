@@ -43,3 +43,5 @@ Finally run the script
 sudo sh dotfiles.sh
 ```
 The script will automatically install all dependencies, copies all config files, fixes many mac default settings and so on...
+
+Note: Some of the settings are configured to me, like my email, name etc. Make sure to change these before running the script.
