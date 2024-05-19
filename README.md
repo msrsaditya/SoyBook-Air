@@ -40,7 +40,7 @@ sudo chmod +x ~/path/to/dotfiles.sh
 ```
 Finally run the script
 ```bash
-sudo sh dotfiles.sh
+sh dotfiles.sh
 ```
 The script will automatically install all dependencies, copies all config files, fixes many mac default settings and so on...
 
