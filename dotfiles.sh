@@ -72,11 +72,12 @@ touch ~/.hushlogin
 sudo sed -i '' '3s/^/auth       sufficient     pam_tid.so\n/' /etc/pam.d/sudo
 
 # Get Access to ~/.local Directory for Applications like Neovim, lf etc.
+sudo mkdir -p ~/.local
 sudo chown -R shashank:staff ~/.local
 
 # Setup Git SSH
 ssh-keygen -t ed25519 -C "msrsaditya@gmail.com"
-copy ~/.ssh/id_ed25519.pub # Copy Paste this Key in GitHub SSH/GPG Keys Section
+pbcopy < ~/.ssh/id_ed25519.pub # Copy Paste this Key in GitHub SSH/GPG Keys Section
 
 ## Test
 # ssh -T git@github.com
