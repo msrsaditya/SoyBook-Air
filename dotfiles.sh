@@ -81,5 +81,4 @@ pbcopy < ~/.ssh/id_ed25519.pub # Copy Paste this Key in GitHub SSH/GPG Keys Sect
 
 ## Test
 # ssh -T git@github.com
-# Add Pass Key to GitHub for Auto Login
 # Remove dotfiles.sh after usage
