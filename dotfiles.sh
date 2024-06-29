@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 ## Install Xcode Command Line Tools (Necessary for Tools Like Git)
 # xcode-select --install
@@ -6,7 +6,7 @@
 ## Download and Run this Script
 # curl -O "https://raw.githubusercontent.com/msrsaditya/SoyBook-Air/main/dotfiles.sh"
 # sudo chmod +x dotfiles.sh
-# sh dotfiles.sh
+# bash dotfiles.sh
 
 # Install Homebrew Package Manager 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -18,7 +18,7 @@ brew analytics off
 brew update;brew upgrade;brew autoremove;brew cleanup;brew doctor
 
 # Install Necessary Packages From Homebrew
-brew install alacritty brave-browser fastfetch font-jetbrains-mono-nerd-font htop iina lf neovim python3 rectangle trash whatsapp zsh-autosuggestions zsh-syntax-highlighting
+brew install alacritty brave-browser chatgpt fastfetch font-jetbrains-mono-nerd-font htop iina lf neovim python3 rectangle trash whatsapp zsh-autosuggestions zsh-syntax-highlighting
 brew update;brew upgrade;brew autoremove;brew cleanup;brew doctor
 
 # Copy config From Dotfiles
