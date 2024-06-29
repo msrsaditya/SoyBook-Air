@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 filename="$1"
 url=$(curl --silent --form "file=@$filename" https://0x0.st)
