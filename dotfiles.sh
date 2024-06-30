@@ -40,10 +40,12 @@ sudo cp ~/soybook-air/scripts/download.sh /usr/local/bin/download.sh
 sudo cp ~/soybook-air/scripts/movie.sh /usr/local/bin/movie.sh
 sudo cp ~/soybook-air/scripts/share.sh /usr/local/bin/share.sh
 sudo cp ~/soybook-air/scripts/whois.sh /usr/local/bin/whois.sh
+sudo cp ~/soybook-air/scripts/timer.sh /usr/local/bin/timer.sh
 sudo chmod +x /usr/local/bin/download.sh
 sudo chmod +x /usr/local/bin/movie.sh
 sudo chmod +x /usr/local/bin/share.sh
 sudo chmod +x /usr/local/bin/whois.sh
+sudo chmod +x /usr/local/bin/timer.sh
 
 cp ~/soybook-air/zsh/zshrc ~/.zshrc
 
