@@ -2,3 +2,5 @@
     size = 20.0
 [font.normal]
     family = "JetBrainsMono Nerd Font"
+[window]
+    title = "Terminal"
