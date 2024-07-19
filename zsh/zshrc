@@ -8,30 +8,29 @@ setopt append_history
 setopt autocd
 
 # History
-HISTSIZE=1000000
-SAVEHIST=1000000
+HISTSIZE=100000
+SAVEHIST=100000
 HISTFILE=~/.histfile
 
-# Aliases
+## Aliases
+
+# System
 alias ls="ls --color=auto"
 alias clear="printf '\33c\e[3J'"
-alias cp="sudo cp -iv"
-alias mv="sudo mv -iv"
-alias mkdir="mkdir -pv"
 alias copy="pbcopy <"
-alias diff="vimdiff"
 alias delete="trash -v -F"
-alias showtrash="trash -l"
-alias cleantrash="trash -s"
+alias diff="vimdiff"
+
+# Homebrew
 alias install="brew install"
 alias remove="brew uninstall"
 alias update="brew update;brew upgrade;brew install --cask $(brew list --cask | tr '\n' ' ');sudo softwareupdate -i -a"
 alias clean="brew autoremove;brew cleanup;brew doctor"
 alias search="brew search"
 alias list="brew leaves;brew list --cask"
+
+# Git
 alias gitall="git pull && git add . && git commit -m 'Changes made' && git push origin main"
-alias study="sudo bash /usr/local/bin/timer.sh"
-alias showstudy="sudo nvim ~/.StudyLog"
 
 # Environment Variables
 export EDITOR="nvim"
@@ -67,7 +66,7 @@ echo -ne "\e[5 q"                # Beam Shape Cursor on Startup
 preexec() { echo -ne "\e[5 q" ;  # Beam Shape Cursor for Each New Prompt
 }
 
-# LF to Switch Directories (ctrl+o)
+# LF to Switch Directories
 lfcd () {
     tmp="$(mktemp -uq)"
     trap "rm -f $tmp >/dev/null 2>&1 && trap - HUP INT QUIT TERM PWR EXIT" HUP INT QUIT TERM PWR EXIT
@@ -79,19 +78,11 @@ lfcd () {
 }
 
 # Key Bindings
-bindkey -s "^o" "^ulfcd\n"
-bindkey "^[[3~" delete-char
-bindkey "^[[1;3D" backward-word
-bindkey "^[[1;3C" forward-word
-bindkey "^A" beginning-of-line
-bindkey "^L" end-of-line
-
-# Edit Current Command in Text Editor (ctrl+e)
-autoload edit-command-line; zle -N edit-command-line
-bindkey "^e" edit-command-line
-bindkey -M vicmd "^e" edit-command-line
-bindkey -M visual "^[[3~" vi-delete
-bindkey -M vicmd "^[[3~" vi-delete-char
+bindkey "^[[1;3D" backward-word # option + <-
+bindkey "^[[1;3C" forward-word  # option + ->
+bindkey "^A" beginning-of-line  # control + a
+bindkey "^L" end-of-line        # control + l
+bindkey -s "^o" "^ulfcd\n"      # control + o
 
 # Plugins
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
