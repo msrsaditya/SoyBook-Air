@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# A Simple Script to Automatically Setup my MacOS Machine According to my Preferences
+# A Simple Script to Setup MacOS According to My Needs
 
 ## Install Xcode Command Line Tools (Necessary for Tools Like Git)
 # xcode-select --install
