@@ -76,6 +76,8 @@ defaults write com.apple.dock autohide-delay -float 0
 defaults write com.apple.dock autohide-time-modifier -int 0
 killall Dock
 
+# Also, Settings > Desktop & Dock > Automatically Hide and Show the Dock > Toggle 
+
 # Change Hostname to Macbook
 sudo scutil --set HostName MacBook
 
