@@ -2,10 +2,10 @@
 vim.cmd('set number')
 
 -- Clipboard
-vim.cmd('set clipboard=unnamedplus')
+vim.cmd('set clipboard = unnamedplus')
 
 -- Mouse Support
-vim.cmd('set mouse=a')
+vim.cmd('set mouse = a')
 
 -- Indentation settings
 vim.cmd('set autoindent')
