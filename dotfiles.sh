@@ -56,13 +56,13 @@ sudo mkdir -p /usr/local/bin
 sudo cp ~/SimpleScripts/MacOS/download.sh /usr/local/bin/download.sh
 sudo cp ~/SimpleScripts/MacOS/movie.sh /usr/local/bin/movie.sh
 sudo cp ~/SimpleScripts/MacOS/share.sh /usr/local/bin/share.sh
-sudo cp ~/SimpleScripts/MacOS/whois.sh /usr/local/bin/whois.sh
 sudo cp ~/SimpleScripts/MacOS/timer.sh /usr/local/bin/timer.sh
+sudo cp ~/SimpleScripts/MacOS/whois.sh /usr/local/bin/whois.sh
 sudo chmod +x /usr/local/bin/download.sh
 sudo chmod +x /usr/local/bin/movie.sh
 sudo chmod +x /usr/local/bin/share.sh
-sudo chmod +x /usr/local/bin/whois.sh
 sudo chmod +x /usr/local/bin/timer.sh
+sudo chmod +x /usr/local/bin/whois.sh
 
 sudo rm -rf soybook-air SimpleScripts
 
