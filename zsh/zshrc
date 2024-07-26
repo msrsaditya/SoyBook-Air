@@ -24,7 +24,7 @@ alias diff="vimdiff"
 # Homebrew
 alias install="brew install"
 alias remove="brew uninstall"
-alias update="brew update;brew upgrade;brew install --cask $(brew list --cask | tr '\n' ' ');sudo softwareupdate -i -a"
+alias update="brew update;brew upgrade;brew install --cask $(brew list --cask | tr '\n' ' ')"
 alias clean="brew autoremove;brew cleanup;brew doctor"
 alias search="brew search"
 alias list="brew leaves;brew list --cask"
