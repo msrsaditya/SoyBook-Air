@@ -50,7 +50,6 @@ cp ~/soybook-air/nvim/init.lua ~/.config/nvim/init.lua
 
 # Zsh
 cp ~/soybook-air/zsh/zshrc ~/.zshrc
-source ~/.zshrc
 
 # Shell Scripts
 sudo mkdir -p /usr/local/bin
