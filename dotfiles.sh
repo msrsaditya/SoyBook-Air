@@ -2,7 +2,8 @@
 
 # A Simple Script to Setup MacOS According to My Needs
 
-## Install Xcode Command Line Tools (Necessary for Tools Like Git)
+### Prerequisites
+## Install Xcode Command Line Tools (For Tools Like Git)
 # xcode-select --install
 
 ## Download and Run this Script
@@ -10,7 +11,7 @@
 # sudo chmod +x dotfiles.sh
 # bash dotfiles.sh
 
-# Install Homebrew Package Manager 
+# Install Homebrew Package Manager
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # Setup Homebrew 
@@ -23,38 +24,48 @@ brew update;brew upgrade;brew autoremove;brew cleanup;brew doctor
 brew install alacritty brave-browser chatgpt fastfetch font-jetbrains-mono-nerd-font htop iina lf neovim python3 rectangle trash whatsapp zsh-autosuggestions zsh-syntax-highlighting
 brew update;brew upgrade;brew autoremove;brew cleanup;brew doctor
 
-# Copy config From Dotfiles
+# Clone Necessary Repositories
 git clone https://github.com/msrsaditya/soybook-air
+git clone https://github.com/msrsaditya/SimpleScripts
 
+## Copy config From Dotfiles
+
+# Alacritty
 mkdir -p ~/.config/alacritty
 cp ~/soybook-air/alacritty/alacritty.toml ~/.config/alacritty/alacritty.toml
 
+# Git
+cp ~/soybook-air/git/gitconfig ~/.gitconfig
+cp ~/soybook-air/git/gitignore_global ~/.gitignore_global
+
+# LF
 mkdir -p ~/.config/lf
 cp ~/soybook-air/lf/colors ~/.config/lf/colors
 cp ~/soybook-air/lf/icons ~/.config/lf/icons
 cp ~/soybook-air/lf/lfrc ~/.config/lf/lfrc
 
+# Neovim
 mkdir -p ~/.config/nvim
 cp ~/soybook-air/nvim/init.lua ~/.config/nvim/init.lua
 
+# Zsh
+cp ~/soybook-air/zsh/zshrc ~/.zshrc
+source ~/.zshrc
+
+# Shell Scripts
 sudo mkdir -p /usr/local/bin
-sudo cp ~/soybook-air/scripts/download.sh /usr/local/bin/download.sh
-sudo cp ~/soybook-air/scripts/movie.sh /usr/local/bin/movie.sh
-sudo cp ~/soybook-air/scripts/share.sh /usr/local/bin/share.sh
-sudo cp ~/soybook-air/scripts/whois.sh /usr/local/bin/whois.sh
-sudo cp ~/soybook-air/scripts/timer.sh /usr/local/bin/timer.sh
+sudo cp ~/SimpleScripts/MacOS/download.sh /usr/local/bin/download.sh
+sudo cp ~/SimpleScripts/MacOS/movie.sh /usr/local/bin/movie.sh
+sudo cp ~/SimpleScripts/MacOS/share.sh /usr/local/bin/share.sh
+sudo cp ~/SimpleScripts/MacOS/whois.sh /usr/local/bin/whois.sh
+sudo cp ~/SimpleScripts/MacOS/timer.sh /usr/local/bin/timer.sh
 sudo chmod +x /usr/local/bin/download.sh
 sudo chmod +x /usr/local/bin/movie.sh
 sudo chmod +x /usr/local/bin/share.sh
 sudo chmod +x /usr/local/bin/whois.sh
 sudo chmod +x /usr/local/bin/timer.sh
 
-cp ~/soybook-air/zsh/zshrc ~/.zshrc
-
-cp ~/soybook-air/git/gitconfig ~/.gitconfig
-cp ~/soybook-air/git/gitignore_global ~/.gitignore_global
-
-sudo rm -rf soybook-air
+sudo rm -rf soybook-air SimpleScripts
 
 # Get Browser Bookmarks File
 curl -O "https://raw.githubusercontent.com/msrsaditya/Collections/main/Bookmarks.html"
