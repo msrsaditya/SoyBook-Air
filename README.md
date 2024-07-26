@@ -1,9 +1,10 @@
-# 2022 M2 Macbook Air Setup
+# My Macbook Air Setup
 
 ![Wallpaper](https://github.com/msrsaditya/SoyBook-Air/blob/main/Screenshot.png)
 
 # Programs I Use and Recommend
 
+- **AI:** ChatGPT
 - **Browser:** Brave Browser
 - **Code Editor:** Neovim
 - **File Manager:** LF
@@ -40,7 +41,7 @@ sudo chmod +x ~/path/to/dotfiles.sh
 ```
 Finally run the script
 ```bash
-sh dotfiles.sh
+bash dotfiles.sh
 ```
 The script will automatically install all dependencies, copies all config files, fixes many mac default settings and so on...
 
