@@ -4,15 +4,16 @@
 
 # Programs I Use and Recommend
 
-- **AI:** ChatGPT
-- **Browser:** Brave Browser
-- **Code Editor:** Neovim
-- **File Manager:** LF
-- **Terminal Emulator:** Alacritty
-- **Video Player:** IINA
-- **Window Manager:** Rectangle
+- **AI:** ChatGPT (Best LLM)
+- **Browser:** Brave Browser (Most Private and Secure Chromium Based Browser)
+- **Code Editor:** Neovim (Best Clean, Minimal, Fast, VIM-Fork CLI Based Text Editor, Config in Lua)
+- **File Manager:** LF (Fastest CLI FIle Manager, Written in Go)
+- **Shell:** ZSH (Fast, Lightweight, BASH-Like, Super Customizable Shell)
+- **Terminal Emulator:** Alacritty (Fastest Terminal Emulator, Written in Rust)
+- **Video Player:** IINA (Best MPV-Like MacOS Native Video Player with Nice UI/UX, Written in Swift)
+- **Window Manager:** Rectangle (Best FOSS, Feature Complete Snapping Tool for MacOS, Written in Swift)
 
-Along With Some Default Programs Like ZSH Shell, Finder, Whatsapp, Apple Mail etc.
+Along With Some Default Programs Like , Finder, Whatsapp, Apple Mail etc.
 
 # Why Mac?
 
