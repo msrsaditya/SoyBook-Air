@@ -19,7 +19,7 @@
 - GPT-4o (ChatGPT) Beats Most of the LLMs in Many Benchmarks. It's kind of an Industry Standard these Days.
 - Brave Browser is the Most Private and Secure Chromium Based Browser. Read My Detailed Analysis and Benchmarking of Various Browsers [Here](https://medium.com/@msrsaditya/the-best-browser-for-privacy-3f654b6dac7a)
 - Vim Makes You Productive. Neovim Makes the Code Cleaner. I Write My Configs in Lua. Period.
-- LF is the Fastest Ranger-Like CLI File Manager. "Fast" as in Code and in Productivity. Both. Unlike Ranger (Python, Ugh!), It is Written in Go.
+- LF is the Fastest Ranger-Like CLI File Manager. "Fast" as in Code and in Productivity. Both. It is Written in Go, Unlike Ranger (Python, Ugh!).
 - ZSH is Fast, Lightweight, BASH-Like, Super Customizable, Also Default on MacOS. Written in C.
 - FastFetch is Neofetch, But Fast. Written in C.
 - Alacritty is a Blazingly Fast Terminal Emulator with GPU Acceleration. Written in Rust.
