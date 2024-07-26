@@ -6,11 +6,11 @@
 
 - **AI:** ChatGPT
 - **Browser:** Brave Browser
-- **Code Editor:** Neovim
 - **File Manager:** LF
 - **Shell:** ZSH
 - **System Information:** FastFetch
 - **Terminal Emulator:** Alacritty
+- **Text Editor:** Neovim
 - **Video Player:** IINA
 - **Window Manager:** Rectangle
 
