@@ -13,18 +13,18 @@
 - **Video Player:** [IINA](https://github.com/iina/iina)
 - **Window Manager:** [Rectangle](https://github.com/rxhanson/Rectangle)
 
+Along With Some Other Apps Like Apple Mail, Finder, ChatGPT, Whatsapp etc.
+
 # Why These Programs?
 
 - Brave Browser is the Most Private and Secure Chromium Based Browser. Read My Detailed Analysis and Benchmarking of Various Browsers [Here](https://medium.com/@msrsaditya/the-best-browser-for-privacy-3f654b6dac7a)
 - LF is the Fastest Ranger-Like CLI File Manager. "Fast" as in Code and in Productivity, Both. It is Written in Go, Unlike Ranger (Python, Ugh!).
-- ZSH is Fast, Lightweight, BASH-Like, Super Customizable, Also Default on MacOS. Written in C.
+- ZSH is Fast, Lightweight, BASH-Like, Super Customizable Shell. Also Default on MacOS. Written in C.
 - FastFetch is Neofetch, But Fast. Written in C.
 - Alacritty is a Blazingly Fast Terminal Emulator with GPU Acceleration. Written in Rust.
 - Vim Makes You Productive. Neovim Makes the Code Cleaner. I Write My Configs in Lua. Period.
 - IINA is the Best MPV-Like MacOS Native Video Player with Nice UI/UX. Written in Swift.
 - Rectangle is the Best FOSS, Feature Complete Snapping Tool for MacOS, Written in Swift.
-
-Along With Some Other Apps Like ChatGPT, Finder, Whatsapp, Apple Mail etc.
 
 # Why Mac?
 
