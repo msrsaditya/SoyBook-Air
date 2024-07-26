@@ -24,7 +24,7 @@
 - IINA is the Best MPV-Like MacOS Native Video Player with Nice UI/UX. Written in Swift.
 - Rectangle is the Best FOSS, Feature Complete Snapping Tool for MacOS, Written in Swift.
 
-Along With Some Apps Like ChatGPT, Finder, Whatsapp, Apple Mail etc.
+Along With Some Other Apps Like ChatGPT, Finder, Whatsapp, Apple Mail etc.
 
 # Why Mac?
 
