@@ -64,38 +64,40 @@ sudo chmod +x /usr/local/bin/share.sh
 sudo chmod +x /usr/local/bin/timer.sh
 sudo chmod +x /usr/local/bin/whois.sh
 
+# Delete Useless Stuff After Use
 sudo rm -rf soybook-air SimpleScripts
 
-# Get Browser Bookmarks File
+# Download Browser Bookmarks File
 curl -O "https://raw.githubusercontent.com/msrsaditya/Collections/main/Bookmarks.html"
 
-## Configure Settings
+## Settings and Tweaks
 
 # Reduce Dock Response Time
 defaults write com.apple.dock autohide-delay -float 0
 defaults write com.apple.dock autohide-time-modifier -int 0
 killall Dock
 
-# Also, Settings > Desktop & Dock > Automatically Hide and Show the Dock > Toggle 
+# Also Turn On Settings > Desktop & Dock > Automatically Hide and Show the Dock
 
 # Change Hostname to Macbook
 sudo scutil --set HostName MacBook
 
-# Remove Last Login Line on First Line of Terminal
+# Remove 'Last Login' Info on Opening Terminal
 touch ~/.hushlogin
 
-# Use TouchID for SUDO Commands
+# Use TouchID Instead of Password for SUDO Commands
 sudo sed -i '' '3s/^/auth       sufficient     pam_tid.so\n/' /etc/pam.d/sudo
 
-# Get Access to ~/.local Directory for Applications like Neovim, lf etc.
+# Give Access to ~/.local Directory for Applications like Neovim, lf etc.
 sudo mkdir -p ~/.local
 sudo chown -R shashank:staff ~/.local
 
-# Setup Git SSH
-ssh-keygen -t ed25519 -C "msrsaditya@gmail.com"
-pbcopy < ~/.ssh/id_ed25519.pub # Copy Paste this Key in GitHub SSH/GPG Keys Section
+## Setup Git SSH
+# ssh-keygen -t ed25519 -C "msrsaditya@gmail.com"
+# pbcopy < ~/.ssh/id_ed25519.pub 
+# Now Paste the Clipboard in GitHub SSH/GPG Keys Section
 
 ## Test
 # ssh -T git@github.com
-# Remove dotfiles.sh After Usage
-# Don't Forget to Give All Permissions to Alacritty and LF
+# Remove dotfiles.sh, Bookmarks Files etc. After Usage
+# Don't Forget to Give All Permissions to Alacritty, LF etc. in Settings
