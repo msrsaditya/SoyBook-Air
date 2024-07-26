@@ -28,7 +28,7 @@ brew update;brew upgrade;brew autoremove;brew cleanup;brew doctor
 git clone https://github.com/msrsaditya/soybook-air
 git clone https://github.com/msrsaditya/SimpleScripts
 
-## Copy config From Dotfiles
+## Copy Config From Dotfiles
 
 # Alacritty
 mkdir -p ~/.config/alacritty
@@ -95,4 +95,5 @@ pbcopy < ~/.ssh/id_ed25519.pub # Copy Paste this Key in GitHub SSH/GPG Keys Sect
 
 ## Test
 # ssh -T git@github.com
-# Remove dotfiles.sh after usage
+# Remove dotfiles.sh After Usage
+# Don't Forget to Give All Permissions to Alacritty and LF
