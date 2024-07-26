@@ -95,9 +95,10 @@ sudo chown -R shashank:staff ~/.local
 ## Setup Git SSH
 # ssh-keygen -t ed25519 -C "msrsaditya@gmail.com"
 # pbcopy < ~/.ssh/id_ed25519.pub 
-# Now Paste the Clipboard in GitHub SSH/GPG Keys Section
+# Now Paste Your Clipboard in GitHub SSH/GPG Keys Section
 
 ## Test
 # ssh -T git@github.com
-# Remove dotfiles.sh, Bookmarks Files etc. After Usage
-# Don't Forget to Give All Permissions to Alacritty, LF etc. in Settings
+
+# Also, Delete all Useless Files/Folders After Usage
+# And Don't Forget to Give All Permissions to Programs Like Alacritty, LF etc. in MacOS Settings
