@@ -53,6 +53,7 @@ cmd trash ${{
     fi
 }}
 
+# Cleaning Trash Files
 cmd cleantrash ${{ 
     if [[ -n "$fs" ]]; then
         for file in $fs; do
@@ -63,7 +64,7 @@ cmd cleantrash ${{
     fi
 }}
 
-# Archive Extraction
+# Extracting Files
 cmd extract ${{
     set -f
     case $f in
