@@ -4,14 +4,27 @@
 
 # Programs I Use and Recommend
 
-- **AI:** ChatGPT (Best LLM)
-- **Browser:** Brave Browser (Most Private and Secure Chromium Based Browser)
-- **Code Editor:** Neovim (Best Clean, Minimal, Fast, VIM-Fork CLI Based Text Editor, Config in Lua)
-- **File Manager:** LF (Fastest CLI FIle Manager, Written in Go)
-- **Shell:** ZSH (Fast, Lightweight, BASH-Like, Super Customizable Shell)
-- **Terminal Emulator:** Alacritty (Fastest Terminal Emulator, Written in Rust)
-- **Video Player:** IINA (Best MPV-Like MacOS Native Video Player with Nice UI/UX, Written in Swift)
-- **Window Manager:** Rectangle (Best FOSS, Feature Complete Snapping Tool for MacOS, Written in Swift)
+- **AI:** ChatGPT
+- **Browser:** Brave Browser
+- **Code Editor:** Neovim
+- **File Manager:** LF
+- **Shell:** ZSH
+- **System Information:** FastFetch
+- **Terminal Emulator:** Alacritty
+- **Video Player:** IINA
+- **Window Manager:** Rectangle
+
+# Why These Programs?
+
+- GPT-4o (ChatGPT) Beats Most of the LLMs in Many Benchmarks. It's kind of an Industry Standard these Days.
+- Brave Browser is the Most Private and Secure Chromium Based Browser. Read My Detailed Analysis and Benchmarking of Various Browsers [Here](https://medium.com/@msrsaditya/the-best-browser-for-privacy-3f654b6dac7a)
+- Vim Makes You Productive. Neovim Makes the Code Cleaner. I Write My Configs in Lua. Period.
+- LF is the Fastest Ranger-Like CLI File Manager. "Fast" as in Code and in Productivity. Both. Unlike Ranger (Python, Ugh!), It is Written in Go.
+- ZSH is Fast, Lightweight, BASH-Like, Super Customizable, Also Default on MacOS. Written in C.
+- FastFetch is Neofetch, But Fast. Written in C.
+- Alacritty is a Blazingly Fast Terminal Emulator with GPU Acceleration. Written in Rust.
+- IINA is the Best MPV-Like MacOS Native Video Player with Nice UI/UX. Written in Swift.
+- Rectangle is the Best FOSS, Feature Complete Snapping Tool for MacOS, Written in Swift.
 
 Along With Some Default Programs Like , Finder, Whatsapp, Apple Mail etc.
 
