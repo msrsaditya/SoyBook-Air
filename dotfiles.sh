@@ -34,6 +34,10 @@ git clone https://github.com/msrsaditya/SimpleScripts
 mkdir -p ~/.config/alacritty
 cp ~/soybook-air/alacritty/alacritty.toml ~/.config/alacritty/alacritty.toml
 
+# FastFetch
+mkdir -p ~/.config/fastfetch/
+cp ~/soybook-air/fastfetch/config.jsonc ~/.config/fastfetch/config.jsonc
+
 # Git
 cp ~/soybook-air/git/gitconfig ~/.gitconfig
 cp ~/soybook-air/git/gitignore_global ~/.gitignore_global
