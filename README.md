@@ -58,3 +58,8 @@ bash dotfiles.sh
 The script will automatically install all dependencies, copies all config files, fixes many mac default settings and so on...
 
 Note: Some of the settings are configured to me, like my email, name etc. Make sure to change these before running the script.
+
+# Future Ideas
+- add config files for apps like brave, iina, vs code etc. Try to automate everything with simple config files
+- if possible, automate everything with config files, even the macos settings (this is a very big task!)
+- automation, reproducible system with no effort on my side, this is my dream!
