@@ -2,5 +2,9 @@
     size = 20.0
 [font.normal]
     family = "JetBrainsMono Nerd Font"
+[cursor]
+    style = { shape = "Beam", blinking = "On" }
+    blink_interval = 600
+    blink_timeout = 0
 [window]
     decorations = "Buttonless"
