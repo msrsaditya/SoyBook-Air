@@ -15,11 +15,13 @@ HISTFILE=~/.histfile
 ## Aliases
 
 # System
-alias ls="ls --color=auto"
 alias clear="printf '\33c\e[3J'"
 alias copy="pbcopy <"
 alias delete="trash -v -F"
 alias diff="vimdiff"
+alias download="aria2c"
+alias nosleep="sudo pmset disablesleep 1"
+alias sleep="sudo pmset disablesleep 0"
 
 # Homebrew
 alias install="brew install"
@@ -29,42 +31,15 @@ alias clean="brew autoremove;brew cleanup;brew doctor"
 alias search="brew search"
 alias list="brew leaves;brew list --cask"
 
-# Git
-alias gitall="git pull && git add . && git commit -m 'Changes made' && git push origin main"
+# Development 
+alias gitall="git add . && git commit -m 'Changes made' && git push origin main"
+alias on="source ~/Documents/Projects/.venv/bin/activate"
+alias off="deactivate"
+alias output="echo ~/Documents/test.py | entr -c python3 ~/Documents/test.py"
 
 # Environment Variables
 export EDITOR="nvim"
 export VISUAL="nvim"
-
-# Tab Autocomplete
-autoload -U compinit
-zstyle ":completion:*" menu select
-zmodload zsh/complist
-compinit
-_comp_options+=(globdots)
-
-# Vim Bindings
-bindkey -v
-export KEYTIMEOUT=1
-
-# Cursor Shape for Different Vim Modes 
-function zle-keymap-select () {
-    case $KEYMAP in
-        vicmd) echo -ne "\e[1 q";;      # Block
-        viins|main) echo -ne "\e[5 q";; # Beam
-    esac
-}
-
-zle -N zle-keymap-select
-zle-line-init() {
-    zle -K viins                 # Initiate `vi insert` as Keymap (Can Be Removed if `bindkey -V` Has Been Set Elsewhere)
-    echo -ne "\e[5 q"
-}
-
-zle -N zle-line-init
-echo -ne "\e[5 q"                # Beam Shape Cursor on Startup
-preexec() { echo -ne "\e[5 q" ;  # Beam Shape Cursor for Each New Prompt
-}
 
 # LF to Switch Directories
 lfcd () {
