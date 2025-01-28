@@ -1,15 +1,15 @@
 #!/bin/bash
 
 ### Prerequisites
-## Install Xcode Command Line Tools (For Tools Like Git)
+## Install xcode command line tools (for tools like git)
 # xcode-select --install
 
-## Download and Run this Script
+## Download and run this script
 # curl -O "https://raw.githubusercontent.com/msrsaditya/SoyBook-Air/main/dotfiles.sh"
 # sudo chmod +x dotfiles.sh
 # bash dotfiles.sh
 
-# Install Homebrew Package Manager
+# Install Homebrew package manager
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # Setup Homebrew 
@@ -18,14 +18,14 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 brew analytics off
 brew update;brew upgrade;brew autoremove;brew cleanup;brew doctor
 
-# Install Necessary Packages From Homebrew
+# Install necessary packages from Homebrew
 brew install alacritty brave-browser entr fastfetch font-jetbrains-mono-nerd-font htop iina lf neovim python3 trash whatsapp zsh-autosuggestions zsh-syntax-highlighting
 brew update;brew upgrade;brew autoremove;brew cleanup;brew doctor
 
-# Clone Necessary Repositories
+# Clone necessary repositories
 git clone https://github.com/msrsaditya/soybook-air
 
-## Copy Config From Dotfiles
+## Copy config from dotfiles
 
 # Alacritty
 mkdir -p ~/.config/alacritty
@@ -49,44 +49,44 @@ cp ~/soybook-air/lf/lfrc ~/.config/lf/lfrc
 mkdir -p ~/.config/nvim
 cp ~/soybook-air/nvim/init.lua ~/.config/nvim/init.lua
 
-# Zsh
+# ZSH
 cp ~/soybook-air/zsh/zshrc ~/.zshrc
 
-# Delete Useless Stuff After Use
+# Delete eseless folders after use
 sudo rm -rf soybook-air
 
-# Download Browser Bookmarks File
-curl -O "https://raw.githubusercontent.com/msrsaditya/Collections/main/Bookmarks.html"
+# Download browser bookmarks file
+# curl -O "https://raw.githubusercontent.com/msrsaditya/Collections/main/Bookmarks.html"
 
 ## Settings and Tweaks
 
-# Reduce Dock Response Time
+# Reduce dock response time
 defaults write com.apple.dock autohide-delay -float 0
 defaults write com.apple.dock autohide-time-modifier -int 0
 killall Dock
 
 # Also Turn On Settings > Desktop & Dock > Automatically Hide and Show the Dock
 
-# Change Hostname to Macbook
+# Change hostname to 'Macbook'
 sudo scutil --set HostName MacBook
 
-# Remove 'Last Login' Info on Opening Terminal
+# Remove 'Last Login' info on opening terminal
 touch ~/.hushlogin
 
-# Use TouchID Instead of Password for SUDO Commands
+# Use TouchID instead of password for SUDO commands
 sudo sed -i '' '3s/^/auth       sufficient     pam_tid.so\n/' /etc/pam.d/sudo
 
-# Give Access to ~/.local Directory for Applications like Neovim, lf etc.
+# Give access to ~/.local directory for applications like neovim, lf etc.
 sudo mkdir -p ~/.local
 sudo chown -R shashank:staff ~/.local
 
-## Setup Git SSH
+## Setup git SSH
 # ssh-keygen -t ed25519 -C "msrsaditya@gmail.com"
 # pbcopy < ~/.ssh/id_ed25519.pub 
-# Now Paste Your Clipboard in GitHub SSH/GPG Keys Section
+# Now paste your clipboard in GitHub SSH/GPG keys section
 
 ## Test
 # ssh -T git@github.com
 
-# Also, Delete all Useless Files/Folders After Usage
-# And Don't Forget to Give All Permissions to Programs Like Alacritty, LF etc. in MacOS Settings
+# Also, delete all useless files/folders after usage
+# And don't forget to give all permissions to programs like alacritty, lf etc. in MacOS settings
