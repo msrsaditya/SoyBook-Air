@@ -3,4 +3,4 @@
 [font.normal]
     family = "JetBrainsMono Nerd Font"
 [window]
-    title = "Terminal"
+    decorations = "Buttonless"
