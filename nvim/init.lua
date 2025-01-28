@@ -14,9 +14,6 @@ vim.opt.shiftwidth = 4        -- Number of spaces for auto-indent
 vim.opt.tabstop = 4           -- Number of spaces that a tab counts for
 vim.opt.smartindent = true    -- Enable smart-indent
 
--- Editor
-vim.opt.wrap = false          -- Don't wrap lines
-
 -- File
 vim.opt.fileencoding = 'utf-8' -- Default file encoding
 vim.opt.backup = false         -- Don't create backup files
