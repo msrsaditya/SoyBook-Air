@@ -1,7 +1,5 @@
 #!/bin/bash
 
-# A Simple Script to Setup MacOS According to My Needs
-
 ### Prerequisites
 ## Install Xcode Command Line Tools (For Tools Like Git)
 # xcode-select --install
@@ -21,12 +19,11 @@ brew analytics off
 brew update;brew upgrade;brew autoremove;brew cleanup;brew doctor
 
 # Install Necessary Packages From Homebrew
-brew install alacritty brave-browser chatgpt fastfetch font-jetbrains-mono-nerd-font htop iina lf neovim python3 rectangle trash whatsapp zsh-autosuggestions zsh-syntax-highlighting
+brew install alacritty brave-browser entr fastfetch font-jetbrains-mono-nerd-font htop iina lf neovim python3 trash whatsapp zsh-autosuggestions zsh-syntax-highlighting
 brew update;brew upgrade;brew autoremove;brew cleanup;brew doctor
 
 # Clone Necessary Repositories
 git clone https://github.com/msrsaditya/soybook-air
-git clone https://github.com/msrsaditya/SimpleScripts
 
 ## Copy Config From Dotfiles
 
@@ -55,21 +52,8 @@ cp ~/soybook-air/nvim/init.lua ~/.config/nvim/init.lua
 # Zsh
 cp ~/soybook-air/zsh/zshrc ~/.zshrc
 
-# Shell Scripts
-sudo mkdir -p /usr/local/bin
-sudo cp ~/SimpleScripts/MacOS/download.sh /usr/local/bin/download.sh
-sudo cp ~/SimpleScripts/MacOS/movie.sh /usr/local/bin/movie.sh
-sudo cp ~/SimpleScripts/MacOS/share.sh /usr/local/bin/share.sh
-sudo cp ~/SimpleScripts/MacOS/timer.sh /usr/local/bin/timer.sh
-sudo cp ~/SimpleScripts/MacOS/whois.sh /usr/local/bin/whois.sh
-sudo chmod +x /usr/local/bin/download.sh
-sudo chmod +x /usr/local/bin/movie.sh
-sudo chmod +x /usr/local/bin/share.sh
-sudo chmod +x /usr/local/bin/timer.sh
-sudo chmod +x /usr/local/bin/whois.sh
-
 # Delete Useless Stuff After Use
-sudo rm -rf soybook-air SimpleScripts
+sudo rm -rf soybook-air
 
 # Download Browser Bookmarks File
 curl -O "https://raw.githubusercontent.com/msrsaditya/Collections/main/Bookmarks.html"
