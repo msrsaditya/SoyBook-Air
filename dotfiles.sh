@@ -19,7 +19,7 @@ brew analytics off
 brew update;brew upgrade;brew autoremove;brew cleanup;brew doctor
 
 # Install necessary packages from Homebrew
-brew install alacritty brave-browser entr fastfetch font-jetbrains-mono-nerd-font htop iina lf neovim python3 trash whatsapp zsh-autosuggestions zsh-syntax-highlighting
+brew install alacritty brave-browser entr fastfetch font-jetbrains-mono-nerd-font htop iina lf neovim pearcleaner python3 trash whatsapp zsh-autosuggestions zsh-syntax-highlighting
 brew update;brew upgrade;brew autoremove;brew cleanup;brew doctor
 
 # Clone necessary repositories
