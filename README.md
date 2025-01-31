@@ -4,7 +4,7 @@
 
 # Programs I Use and Recommend
 
- **App Cleaner:** [PearCleaner](https://github.com/alienator88/Pearcleaner)
+- **App Cleaner:** [PearCleaner](https://github.com/alienator88/Pearcleaner)
 - **Browser:**  [Brave Browser](https://github.com/brave/brave-browser)
 - **File Manager:** [LF](https://github.com/gokcehan/lf)
 - **Font:[JetBrainsMono](https://github.com/JetBrains/JetBrainsMono)
