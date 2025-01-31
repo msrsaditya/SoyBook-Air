@@ -4,25 +4,29 @@
 
 # Programs I Use and Recommend
 
+ **App Cleaner:** [PearCleaner](https://github.com/alienator88/Pearcleaner)
 - **Browser:**  [Brave Browser](https://github.com/brave/brave-browser)
 - **File Manager:** [LF](https://github.com/gokcehan/lf)
+- **Font:[JetBrainsMono](https://github.com/JetBrains/JetBrainsMono)
 - **Shell:** [ZSH](https://github.com/zsh-users/zsh)
 - **System Information:** [FastFetch](https://github.com/fastfetch-cli/fastfetch)
 - **Terminal Emulator:** [Alacritty](https://github.com/alacritty/alacritty)
 - **Text Editor:** [Neovim](https://github.com/neovim/neovim)
 - **Video Player:** [IINA](https://github.com/iina/iina)
 
-Along With Some Other Apps Like Apple Mail, Finder, Whatsapp etc.
+Along With Some Other Apps Like Apple Mail, TextEdit, Finder, Whatsapp etc.
 
 # Why These Programs?
 
-- Brave Browser is the Most Private and Secure Chromium Based Browser. Read My Detailed Analysis and Benchmarking of Various Browsers [Here](https://medium.com/@msrsaditya/the-best-browser-for-privacy-3f654b6dac7a)
-- LF is the Fastest Ranger-Like CLI File Manager. "Fast" as in Code and in Productivity, Both. It is Written in Go, Unlike Ranger (Python, Ugh!).
+- Pear Cleaner is the Best Most Advanced Mac App Cleaner. Written in Swift.
+- Brave Browser is the Most Private and Secure Chromium Based Browser.
+- LF is the Fastest Ranger-Like CLI File Manager, Written in Go, Unlike Ranger (Python, Ugh!).
+- JetBrainsMono is the Best Font for Coding. I use Nerd Fonts Along With it.
 - ZSH is Fast, Lightweight, BASH-Like, Super Customizable Shell. Also Default on MacOS. Written in C.
 - FastFetch is Neofetch, But Fast. Written in C.
 - Alacritty is a Blazingly Fast Terminal Emulator with GPU Acceleration. Written in Rust.
-- Vim Makes You Productive. Neovim Makes the Code Cleaner. I Write My Configs in Lua. Period.
-- IINA is the Best MPV-Like MacOS Native Video Player with Nice UI/UX. Written in Swift.
+- Vim Makes You Productive. Neovim is a fork of Vim. I Write My Configs in Lua.
+- IINA is the Best MPV-Like MacOS Native (Silicon) Video Player with Nice UI/UX. Written in Swift.
 
 # Why Mac?
 
