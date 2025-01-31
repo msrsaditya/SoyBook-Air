@@ -7,7 +7,7 @@
 - **App Cleaner:** [PearCleaner](https://github.com/alienator88/Pearcleaner)
 - **Browser:**  [Brave Browser](https://github.com/brave/brave-browser)
 - **File Manager:** [LF](https://github.com/gokcehan/lf)
-- **Font**:[JetBrainsMono](https://github.com/JetBrains/JetBrainsMono)
+- **Font**: [JetBrainsMono](https://github.com/JetBrains/JetBrainsMono)
 - **Shell:** [ZSH](https://github.com/zsh-users/zsh)
 - **System Information:** [FastFetch](https://github.com/fastfetch-cli/fastfetch)
 - **Terminal Emulator:** [Alacritty](https://github.com/alacritty/alacritty)
