@@ -14,7 +14,7 @@
 - **Text Editor:** [Neovim](https://github.com/neovim/neovim)
 - **Video Player:** [IINA](https://github.com/iina/iina)
 
-Along With Some Other Apps Like Apple Mail, TextEdit, Finder, Whatsapp etc.
+Along With Some Other Apps Like Apple Mail, Finder, TextEdit, Whatsapp etc.
 
 # Why These Programs?
 
